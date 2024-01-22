@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <style>
+        .font {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="font">
+    <header>
+        <!-- navbar  -->
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Item 1</a></li>
+                            <li>
+                                <a>Parent</a>
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </li>
+                            <li><a>Item 3</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-xl">daisyUI</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Item 1</a></li>
+                        <li>
+                            <details>
+                                <summary>Parent</summary>
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li><a>Item 3</a></li>
+                    </ul>
+                </div>
+
+                <div class="navbar-end">
+                    <button class="btn btn-ghost btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </button>
+                    <a class="btn">Button</a>
+                </div>
+            </div>
+        </nav>
+        <!-- section one  -->
+        <div class="w-80  lg:w-[1170px]  mx-auto">
+            <div class="carousel w-full h-52 lg:h-[550px]">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="./Images/1.png" class="w-full" />
+                    <div class="absolute   transform -translate-y-1/2 left-5 right-5 bottom-0">
+                        <a href="#slide4" class="btn btn-circle bg-inherit border-none">❮</a>
+                        <a href="#slide2" class="btn btn-circle bg-inherit border-none">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="https://daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg" class="w-full" />
+                    <div class="absolute   transform -translate-y-1/2 left-5 right-5 bottom-0">
+                        <a href="#slide1" class="btn btn-circle bg-inherit border-none">❮</a>
+                        <a href="#slide3" class="btn btn-circle bg-inherit border-none">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="https://daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg" class="w-full" />
+                    <div class="absolute   transform -translate-y-1/2 left-5 right-5 bottom-0">
+                        <a href="#slide2" class="btn btn-circle bg-inherit border-none">❮</a>
+                        <a href="#slide4" class="btn btn-circle bg-inherit border-none">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <img src="https://daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg" class="w-full" />
+                    <div class="absolute   transform -translate-y-1/2 left-5 right-5 bottom-0">
+                        <a href="#slide3" class="btn btn-circle bg-inherit border-none">❮</a>
+                        <a href="#slide1" class="btn btn-circle bg-inherit border-none">❯</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- section two  -->
+        <section>
+            <hr class="border-dashed w-[1170px] mx-auto">
+            <h2 class="text-center">Professional Hockeys Club</h2>
+            <p class="text-center">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor.
+                Purus urna in sit nullam proin. </p>
+            <hr class="border-dashed w-[1170px] mx-auto">
+            <div class="flex flex-col lg:flex-row items-center justify-center">
+                <!-- Radial progressbar one -->
+                <div class="w-[250px] flex flex-col items-center">
+                    <div class="radial-progress  text-[#FF4240]" style="--value:87;" role="progressbar">87%</div>
+                    <h4 class="">Prayer Facility</h4>
+                    <p class="text-center ">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+                <!-- Radial progressbar two -->
+                <div class="w-[250px] flex flex-col items-center">
+                    <div class="radial-progress text-[#49D293]" style="--value:95;" role="progressbar">95%</div>
+                    <h4 class="">Prayer Facility</h4>
+                    <p class="text-center ">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+                <!-- Radial progressbar three -->
+                <div class="w-[250px] flex flex-col items-center">
+                    <div class="radial-progress text-[#FFB546]" style="--value:90;" role="progressbar">90%</div>
+                    <h4 class="">Prayer Facility</h4>
+                    <p class="text-center ">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+                <!-- Radial progressbar four -->
+                <div class="w-[250px] flex flex-col items-center">
+                    <div class="radial-progress text-[#4C8DF1]" style="--value:80;" role="progressbar">80%</div>
+                    <h4 class="">Prayer Facility</h4>
+                    <p class="text-center ">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+            </div>
+        </section>
+        <!-- section three  -->
+        <section>
+            <h2 class="text-center">Program Sections</h2>
+            <p class="text-center">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit
+                nullam proin. </p>
+            <div class="flex flex-col lg:flex-row items-center justify-center gap-6">
+                <div class="hero lg:w-[573px] lg:h-[338px]"
+                style="background-image: url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg);">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-neutral-content">
+                    <div class=" flex flex-col items-start">
+                        <h1 class="mb-5 text-5xl font-bold">Junior Program</h1>
+                        <p class="mb-5">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+                            enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor
+                            congue sed et in.</p>
+                        <button class="btn btn-primary">Register Now!</button>
+                    </div>
+                </div>
+            </div>
+            <div class="hero lg:w-[573px] lg:h-[338px]"
+                style="background-image: url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg);">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-neutral-content">
+                    <div class=" flex flex-col items-start">
+                        <h1 class="mb-5 text-5xl font-bold">Junior Program</h1>
+                        <p class="mb-5">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+                            enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor
+                            congue sed et in.</p>
+                        <button class="btn btn-primary">Register Now!</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="hero lg:w-[1170px] lg:h-[450px] mx-auto"
+                style="background-image: url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg);">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-neutral-content">
+                    <div class=" flex flex-col items-start">
+                        <h1 class="mb-5 text-5xl font-bold">Junior Program</h1>
+                        <p class="mb-5">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+                            enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor
+                            congue sed et in.</p>
+                        <button class="btn btn-primary">Register Now!</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
